@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import GrosElem from './Components/GrosElem/GrosElem';
+import Navigation from './Components/Navbar/Navigation';
 
 function App() {
+
+  const [afficher, setAfficher] = useState(false);
+
+  const afficherElement = (() => {
+    if (setAfficher == true)
+      (afficher = true)
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <Navigation />
+
+      {/* ternaire plus plus */}
+      {afficher &&
+        <GrosElem composant={afficherElement()} />
+      }
+    
     </div>
   );
 }

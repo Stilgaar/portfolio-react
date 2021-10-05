@@ -1,0 +1,14 @@
+.navi {
+    background-color: #73757E;
+    height:3.5vh; 
+}
+
+.navelement {
+    color: ivory;
+    font-size: 1.3em;
+    margin: 0.5rem; 
+}
+
+.navelement:hover {
+    color: black; 
+}

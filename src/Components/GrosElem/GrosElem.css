@@ -1,0 +1,11 @@
+.groselem {
+    text-align: center;
+    margin: auto; 
+    margin-top: 5em;
+}
+
+h1 {
+    font-size: 5em;
+    letter-spacing: 0.7em;
+    line-height: 2em;
+}
