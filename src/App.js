@@ -8,9 +8,10 @@ function App() {
 
   const [afficher, setAfficher] = useState(false);
 
-  const afficherElement = (() => {
+  const afficherElement = ((afficher) => {
     if (setAfficher == true)
-      (afficher = true)
+    setAfficher(...afficher(true))
+    console.log("côté l'app")
   })
 
   return (
@@ -18,9 +19,8 @@ function App() {
 
       <Navigation />
 
-      {/* ternaire plus plus */}
       {afficher &&
-        <GrosElem composant={afficherElement()} />
+      <GrosElem composant={() => afficherElement()}/>
       }
     
     </div>
