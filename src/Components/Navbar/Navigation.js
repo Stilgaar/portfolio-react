@@ -16,9 +16,9 @@ function Navigation( composant ) {
     const mouseOut4 = (e) => { e.target.innerHTML ="&#60; show &#62;"}
     const mouseOut5 = (e) => { e.target.innerHTML = "&#x0260E &#x0260E; &#x0260E; &#x0260E;"}
 
-    const mouseNav = (event, composant) => {
-        if (event == true) {
-        console.log("ici ça marche")
+    const mouseNav = (e, composant) => {
+        if (e == true) {
+        
 }
 }
 
