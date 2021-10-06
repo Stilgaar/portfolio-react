@@ -1,45 +1,48 @@
 
-import { useEffect, useState } from 'react';
-import './App.css';
-import Main from './Components/Main/Main';
+import Main from "./Components/Main/Main";
 import Navigation from './Components/Navbar/Navigation';
+import { useState } from 'react';
+
+import './App.css';
+import { BrowserRouter as Router, Switch, Route, withRouter } from "react-router-dom";
+
+import Extensions from './Components/Extensions/Extensions';
+
 
 function App() {
 
+
+
+
   const [afficher, setAfficher] = useState(false);
 
-<<<<<<< HEAD
   const afficherElement = (() => {
-    setAfficher(current => !current)
-=======
-  const afficherElement = ((afficher) => {
-    if (setAfficher == true)
-    setAfficher(...afficher(true))
-    console.log("côté l'app")
->>>>>>> e6ff523f790b4b39a590763b98fe0aa627371c39
+    if (afficher == true) {
+      return;
+    }
+    else {
+      setAfficher(current => !current)
+    }
   })
-
-  useEffect(() => {
-    console.log(afficher)
-  }, [afficher]
-  )
 
   return (
     <div>
-<<<<<<< HEAD
-      <Navigation composant={afficherElement}/>
-      {/* ternaire plus plus */}
-       { afficher &&
-        <Main /> }
-=======
+      <Router>
+        <Navigation composant={afficherElement} />
+        <Switch>
+          <Route path="/Extensions">
+            <Extensions />
+          </Route>
+        </Switch>
+        {afficher &&
+        <Route exact
+        activeClassName="active"
+        path="/">
+          <Main exact path = "/"/>
+          </Route>
+        }
+      </Router>
 
-      <Navigation />
-
-      {afficher &&
-      <GrosElem composant={() => afficherElement()}/>
-      }
-    
->>>>>>> e6ff523f790b4b39a590763b98fe0aa627371c39
     </div>
   );
 }

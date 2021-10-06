@@ -5,7 +5,7 @@ function Main() {
     return (
         <div className="groselem">
 
-                <h1> Jeff <br/> van Straelen <br/> Dev FS
+                <h1 className="titreMain"> Jeff <br/> van Straelen <br/> Developpeur <br/> Fs Js
                 </h1>
 
         </div>
