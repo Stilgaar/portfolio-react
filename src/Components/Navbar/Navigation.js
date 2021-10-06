@@ -2,7 +2,7 @@ import './Navigation.css';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 
 
-function Navigation(props) {
+function Navigation( composant ) {
 
     const mouseOver = (e) => { e.target.innerText = "Acceuil"}
     const mouseOver2 = (e) => { e.target.innerText = "Compétences"}
@@ -16,10 +16,10 @@ function Navigation(props) {
     const mouseOut4 = (e) => { e.target.innerHTML ="&#60; show &#62;"}
     const mouseOut5 = (e) => { e.target.innerHTML = "&#x0260E &#x0260E; &#x0260E; &#x0260E;"}
 
-    const mouseNav = (event) => {
+    const mouseNav = (event, composant) => {
         if (event == true) {
         console.log("ici ça marche")
-        }
+}
 }
 
     return (

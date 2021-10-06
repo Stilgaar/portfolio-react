@@ -1,7 +1,7 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
-import GrosElem from './Components/GrosElem/GrosElem';
+import Main from './Components/Main/Main';
 import Navigation from './Components/Navbar/Navigation';
 
 function App() {
@@ -9,20 +9,20 @@ function App() {
   const [afficher, setAfficher] = useState(false);
 
   const afficherElement = (() => {
-    if (setAfficher == true)
-      (afficher = true)
+    setAfficher(current => !current)
   })
+
+  useEffect(() => {
+    console.log(afficher)
+  }, [afficher]
+  )
 
   return (
     <div>
-
-      <Navigation />
-
+      <Navigation composant={afficherElement}/>
       {/* ternaire plus plus */}
-      {afficher &&
-        <GrosElem composant={afficherElement()} />
-      }
-    
+       { afficher &&
+        <Main /> }
     </div>
   );
 }

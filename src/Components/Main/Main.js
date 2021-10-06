@@ -1,6 +1,6 @@
-import './GrosElem.css';
+import './Main.css';
 
-function GrosElem() {
+function Main() {
 
     return (
         <div className="groselem">
@@ -11,4 +11,4 @@ function GrosElem() {
         </div>
 )}
 
-export default GrosElem;
+export default Main;
