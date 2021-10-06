@@ -1,19 +1,11 @@
-
+import './App.css';
+import { useState } from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Extensions from './Components/Extensions/Extensions';
 import Main from "./Components/Main/Main";
 import Navigation from './Components/Navbar/Navigation';
-import { useState } from 'react';
-
-import './App.css';
-import { BrowserRouter as Router, Switch, Route, withRouter } from "react-router-dom";
-
-import Extensions from './Components/Extensions/Extensions';
-
 
 function App() {
-
-
-
-
   const [afficher, setAfficher] = useState(false);
 
   const afficherElement = (() => {
