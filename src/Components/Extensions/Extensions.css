@@ -7,8 +7,8 @@
 .textBox {
     z-index: 10;
     position: absolute; 
-    top: 25%;
-    left: 2%; 
+    top: 17%;
+    left: 4%; 
     
 }
 
@@ -73,7 +73,7 @@
     background-color:rgb(184, 184, 184,0.2);
     border: 2px solid rgba(150, 150, 150, 0.5);
     border-radius: 20px;
-    padding: 0.5rem;
+    padding: 0.7rem;
     font-size: 1.1em;
     }
     @keyframes apparitionText {
@@ -83,12 +83,12 @@
 
 .spanExt { 
     animation: jeffvan 0.7s;
-    opacity: 0.2;
+    opacity: 0.1;
    }
    @keyframes jeffvan
    {   
    from {opacity: 1;}
-   to {opacity: 0.2;}
+   to {opacity: 0.1;}
 }
 
 .titreText { 
