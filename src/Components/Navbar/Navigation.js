@@ -14,7 +14,7 @@ function Navigation({ composant }) {
     const mouseOut2 = (e) => { e.target.innerText = "extensions" }
     const mouseOut3 = (e) => { e.target.innerText = "Ctrl+H" }
     const mouseOut4 = (e) => { e.target.innerHTML = "&#60; show &#62;" }
-    const mouseOut5 = (e) => { e.target.innerHTML = "&#x0260E &#x0260E; &#x0260E; &#x0260E;" }
+    const mouseOut5 = (e) => { e.target.innerHTML = "&#x0260E; &#x0260E; &#x0260E;" }
 
 
     return (
@@ -24,9 +24,9 @@ function Navigation({ composant }) {
                     <Navbar.Collapse className="navi justify-content-end">
                         <Link to="/" className="navelement"> <div  onMouseEnter={(e) => mouseOver(e)} onMouseLeave={(e) => mouseOut(e)}>127.0 0.1</div></Link>
                         <Link to="/Extensions" className="navelement"><div  onMouseEnter={(e) => mouseOver2(e)} onMouseLeave={(e) => mouseOut2(e)}>extensions</div></Link>
-                        <Nav.Link id="histoire"><div className="navelement" onMouseEnter={(e) => mouseOver3(e)} onMouseLeave={(e) => mouseOut3(e)}>Ctrl+H</div> </Nav.Link>
+                        <Link to="/Apropos"className="navelement"> <div onMouseEnter={(e) => mouseOver3(e)} onMouseLeave={(e) => mouseOut3(e)}>Ctrl+H</div> </Link>
                         <Nav.Link id="histoire"><div className="navelement" onMouseEnter={(e) => mouseOver4(e)} onMouseLeave={(e) => mouseOut4(e)} >&#60; show &#62;</div> </Nav.Link>
-                        <Nav.Link id="histoire"><div className="navelement" onMouseEnter={(e) => mouseOver5(e)} onMouseLeave={(e) => mouseOut5(e)} > &#x0260E; &#x0260E; &#x0260E; &#x0260E; </div> </Nav.Link>
+                        <Nav.Link id="histoire"><div className="navelement" onMouseEnter={(e) => mouseOver5(e)} onMouseLeave={(e) => mouseOut5(e)} > &#x0260E; &#x0260E; &#x0260E; </div> </Nav.Link>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

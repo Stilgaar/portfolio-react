@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Extensions from './Components/Extensions/Extensions';
 import Main from "./Components/Main/Main";
 import Navigation from './Components/Navbar/Navigation';
+import Apropos from "./Components/Apropos/Apropos";
 
 function App() {
   const [afficher, setAfficher] = useState(false);
@@ -24,6 +25,9 @@ function App() {
         <Switch>
           <Route path="/Extensions">
             <Extensions />
+          </Route>
+          <Route path="/Apropos">
+          <Apropos />
           </Route>
         </Switch>
         {afficher &&

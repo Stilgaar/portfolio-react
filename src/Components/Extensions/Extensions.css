@@ -9,6 +9,7 @@
     position: absolute; 
     top: 25%;
     left: 2%; 
+    
 }
 
 .extElem {
@@ -25,16 +26,75 @@
     color: rgb(39, 39, 39); 
 }
 
+.textExt {
+ position: relative;
+ animation: bougetext 0.7s;
+}
+@keyframes bougetext {
+    from {top: -10vh;}
+    to {top: 0;}
+}
+.textExt1 {
+    position: relative;
+    animation: bougetext1 0.7s;
+}
+@keyframes bougetext1 {
+    from {right: 10vh}
+    to {right:0;}
+    
+}
+.textExt2 {
+    position: relative;
+    animation: bougetext2 1s;
+}
+@keyframes bougetext2 {
+    from {right: 15vh}
+    to {right:0;}
+}
+.textExt3 {
+    position: relative;
+    animation: bougetext3 1s;
+}
+@keyframes bougetext3 {
+    from {right: 20vh}
+    to {right:0;} 
+}
+.textExt4 {
+    position: relative;
+    animation: bougetext4 0.7s;
+   }
+   @keyframes bougetext4 {
+       from {bottom: -5vh;}
+       to {bottom: 0;}}
+
+
+.devel, .photo, .langue, .restauration, .blogging {
+    animation: apparitionText 0.7s;
+    background-color:rgb(184, 184, 184,0.2);
+    border: 2px solid rgba(150, 150, 150, 0.5);
+    border-radius: 20px;
+    padding: 0.5rem;
+    font-size: 1.1em;
+    }
+    @keyframes apparitionText {
+         from {opacity: 0;}
+         to {opacity: 1;}
+}
+
 .spanExt { 
-    animation: fadeout 0.7s;
+    animation: jeffvan 0.7s;
     opacity: 0.2;
    }
-   @keyframes fadeout
-   {
-   
-   from{opacity: 1;}
+   @keyframes jeffvan
+   {   
+   from {opacity: 1;}
    to {opacity: 0.2;}
-   
-   }
+}
+
+.titreText { 
+    font-weight: bolder;
+    color:rgb(71, 71, 71)
+}
+
 
 
