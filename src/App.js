@@ -5,6 +5,7 @@ import Extensions from './Components/Extensions/Extensions';
 import Main from "./Components/Main/Main";
 import Navigation from './Components/Navbar/Navigation';
 import Apropos from "./Components/Apropos/Apropos";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   const [afficher, setAfficher] = useState(false);
@@ -29,6 +30,9 @@ function App() {
           <Route path="/Apropos">
           <Apropos />
           </Route>
+          <Route path= "/Contact">
+            <Contact />
+            </Route>
         </Switch>
         {afficher &&
         <Route exact

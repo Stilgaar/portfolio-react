@@ -25,8 +25,8 @@ function Navigation({ composant }) {
                         <Link to="/" className="navelement"> <div  onMouseEnter={(e) => mouseOver(e)} onMouseLeave={(e) => mouseOut(e)}>127.0 0.1</div></Link>
                         <Link to="/Extensions" className="navelement"><div  onMouseEnter={(e) => mouseOver2(e)} onMouseLeave={(e) => mouseOut2(e)}>extensions</div></Link>
                         <Link to="/Apropos"className="navelement"> <div onMouseEnter={(e) => mouseOver3(e)} onMouseLeave={(e) => mouseOut3(e)}>Ctrl+H</div> </Link>
-                        <Nav.Link id="histoire"><div className="navelement" onMouseEnter={(e) => mouseOver4(e)} onMouseLeave={(e) => mouseOut4(e)} >&#60; show &#62;</div> </Nav.Link>
-                        <Nav.Link id="histoire"><div className="navelement" onMouseEnter={(e) => mouseOver5(e)} onMouseLeave={(e) => mouseOut5(e)} > &#x0260E; &#x0260E; &#x0260E; </div> </Nav.Link>
+                        <Nav.Link><div className="navelement" onMouseEnter={(e) => mouseOver4(e)} onMouseLeave={(e) => mouseOut4(e)} >&#60; show &#62;</div> </Nav.Link>
+                        <Link to="/Contact" className="navelement"><div onMouseEnter={(e) => mouseOver5(e)} onMouseLeave={(e) => mouseOut5(e)} > &#x0260E; &#x0260E; &#x0260E; </div> </Link>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

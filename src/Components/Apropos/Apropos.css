@@ -31,16 +31,21 @@
 .aproposBox {
     z-index: 100;
     position: absolute; 
-    top: 17%;
-    right: 10%; 
-    width: 30%;
+    top: 5%;
+    right: 12%; 
+    width: 32%;
     font-size: 1.1em;    
 }
 
 .laboiteatexte {
-    font-weight: bold;
+    font-weight:500;
+    line-height: 2.5rem;
+    padding: 0.9rem;
+    font-size: 1.1em;
     position: relative;
     animation: bougeLaBox 0.7s;
+    box-shadow: -3px 3px 3px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
 }
 
 @keyframes bougeLaBox {
@@ -54,6 +59,4 @@
         opacity:1;
         right: 0vh; 
     }    
-}
-
-
+} 

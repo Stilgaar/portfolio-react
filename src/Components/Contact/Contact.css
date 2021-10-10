@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+.grosContact {
+    text-align: center;
+    margin: auto; 
+    margin-top: 5em;
+    position:relative;
+}   
+
+
+
+.contactElem {
+    text-align: center;
+    margin: auto; 
+    margin-top: 5em;
+    z-index: 1;
+}
+
+.titreContact {
+    font-size: 5em;
+    letter-spacing: 0.7em;
+    line-height: 2em;
+    color: rgb(39, 39, 39); 
+    animation: texteContact 0.7s;
+    opacity: 0.1;
+}
+
+@keyframes texteContact
+{   
+from {opacity: 1;}
+to {opacity: 0.1;}
+}
+
+.press {
+    position: absolute; 
+    top: -10%;
+    right: 10%;
+}
+
+.layer, .layer1, .layer2, .layer3, .layer4, .layer5, .layer6 {
+    position: absolute; 
+    font-family: 'Press Start 2P', cursive;
+    font-size: 500px;
+    top: -10%;
+    right: 10%;
+    z-index: 1;
+    text-shadow: 3px 3px 3px white;        
+}
+
+.layer1 {
+    font-size: 499px;
+    z-index: 10;
+    text-shadow: -4px -4px 4px white,
+                4px 4px 4px white;     
+}
+
+.layer2{
+    font-size: 498px;
+    z-index: 15;
+    text-shadow: -5px -5px 5px white,
+                    5px 5px 5px white;     
+}
+
+.layer3{
+    font-size: 498px;
+    z-index: 20;
+    text-shadow: -5px -5px 5px white,
+                5px 5px 5px white;     
+}
+.layer4{
+    font-size: 497px;
+    z-index: 25;
+    text-shadow: -6px -6px 6px white,
+    5px 5px 5px white;       
+}
+.layer5{
+    font-size: 496px;
+    z-index: 30;
+    text-shadow: -7px -7px 7px white,  
+    5px 5px 5px white;     
+}
+.layer6{
+    font-size: 495px;
+    z-index: 35;
+    text-shadow: -8px -8px 8px white ,   
+    5px 5px 5px white;  
+}
+
+
+.layer2{
+    font-size: 498px;
+    z-index: 15;
+    text-shadow: 5px 5px 5px white;     
+}
+.layer2{
+    font-size: 498px;
+    z-index: 15;
+    text-shadow: 5px 5px 5px white;     
+}
+.layer2{
+    font-size: 498px;
+    z-index: 15;
+    text-shadow: 5px 5px 5px white;     
+}
+
+.layer2{
+    font-size: 498px;
+    z-index: 15;
+    text-shadow: 5px 5px 5px white;     
+}
+.layer2{
+    font-size: 498px;
+    z-index: 15;
+    text-shadow: 5px 5px 5px white;     
+}
+.layer2{
+    font-size: 498px;
+    z-index: 15;
+    text-shadow: 5px 5px 5px white;     
+}
+.layer2{
+    font-size: 498px;
+    z-index: 15;
+    text-shadow: 5px 5px 5px white;     
+}
+.layer2{
+    font-size: 498px;
+    z-index: 15;
+    text-shadow: 5px 5px 5px white;     
+}
+
+.layer2{
+    font-size: 498px;
+    z-index: 15;
+    text-shadow: 5px 5px 5px white;     
+}
+.layer2{
+    font-size: 498px;
+    z-index: 15;
+    text-shadow: 5px 5px 5px white;     
+}
+.layer2{
+    font-size: 498px;
+    z-index: 15;
+    text-shadow: 5px 5px 5px white;     
+}
+.layer2{
+    font-size: 498px;
+    z-index: 15;
+    text-shadow: 5px 5px 5px white;     
+}
+.layer2{
+    font-size: 498px;
+    z-index: 15;
+    text-shadow: 5px 5px 5px white;     
+}

@@ -24,9 +24,11 @@ function Apropos() {
                     dite Bootcamp au Bocal Academy de Nice. Ainsi je suis
                     devenu développeur full stack en Javascript. <br /><br />
                     Mes diverses compétences et façons de travailler acquises au fil
-                    des années font de cette nouvelle orientation une super
-                    opportunité très bienvenue.<br />
-                    A très bientôt <br />
+                    des années font de cette nouvelle orientation un changement de vie et d'habitudes
+                    ainsi que d'opportunité très bienvenue.<br />
+                    A très bientôt <br /><br/>
+
+                    Jeff
                 </div>
             </div>
         </div>
